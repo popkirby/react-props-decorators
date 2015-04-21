@@ -8,7 +8,7 @@
     "url": "https://github.com/popkirby/react-props-decorators.git"
   },
   "scripts": {
-    "build": "babel ./index.js -o lib/index.js",
+    "build": "mkdir -p lib && babel ./index.js -o lib/index.js",
     "test": "npm run build && babel ./test/cases --out-dir ./test/cc && mocha --reporter dot ./test/cc/*_test.js",
     "clean": "rm -rf ./lib ./test/cc"
   },
