@@ -1,3 +1,4 @@
 {
+  "plugins": ["babel-plugin-espower"],
   "optional": ["es7.decorators"]
 }
