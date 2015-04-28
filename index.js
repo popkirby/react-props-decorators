@@ -14,3 +14,10 @@ export function defaultProps(param) {
   };
 }
     
+export function contextTypes(param) {
+  return function(clazz) {
+    clazz.contextTypes = assign({}, clazz.contextTypes || {}, param);
+    return clazz;
+  };
+}
+

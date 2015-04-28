@@ -1,4 +1,4 @@
-import { propTypes, defaultProps } from '../../lib/index';
+import { propTypes, defaultProps, contextTypes } from '../../lib/index';
 import React from 'react';
 import assert from 'power-assert';
 
@@ -37,6 +37,22 @@ describe('decorator tests', () => {
 
       assert(Component.defaultProps.foo === "defaultValue");
       assert(Component.defaultProps.bar === 100);
+    });
+  });
+
+  describe('@contextTypes', () => {
+    it('should set Component.contextTypes', () => {
+
+      @contextTypes({
+        "foo": React.PropTypes.func
+      })
+      class Component extends React.Component {
+        render() {
+          return <div></div>;
+        }
+      }
+
+      assert(Component.contextTypes.foo === React.PropTypes.func);
     });
   });
 

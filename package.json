@@ -1,6 +1,6 @@
 {
   "name": "react-props-decorators",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Define props of React components by ES7 decorators",
   "homepage": "https://github.com/popkirby/react-props-decorators",
   "repository": {
