@@ -21,3 +21,10 @@ export function contextTypes(param) {
   };
 }
 
+export function childContextTypes(param) {
+  return function(clazz) {
+    clazz.childContextTypes = assign({}, clazz.contextTypes || {}, param);
+    return clazz;
+  };
+}
+
