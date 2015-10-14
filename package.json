@@ -21,15 +21,20 @@
     "test": "test/"
   },
   "main": "lib/index.js",
+  "peerDependencies": {
+    "react": ">=0.13.0 <0.15.0"
+  },
   "devDependencies": {
     "babel": "^5.8.23",
     "babel-core": "^5.8.25",
     "babel-plugin-espower": "^1.0.0",
     "mocha": "^2.3.3",
-    "power-assert": "^1.1.0"
+    "power-assert": "^1.1.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "sinon": "^1.17.1"
   },
   "dependencies": {
-    "react": "^0.14.0",
     "object-assign": "^4.0.1"
   }
 }
